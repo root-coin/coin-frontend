@@ -62,8 +62,15 @@ class CoinInformationContent extends Component {
     render() {
         return (
             <div className="trade_coin_information_content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nulla posuere purus convallis odio ultrices pharetra. Donec vel sem tellus.
+                줄기는 능선과 더불어 굵은 털이 있고 덩굴손으로 감으면서 다른 물체에 붙어서 길게 자란다. 
+                잎은 어긋나고 잎자루가 길며 손바닥 모양으로 얕게 갈라지고 가장자리에 톱니가 있으며 거칠다. 
+                꽃은 단성화이며 5∼6월에 노란색으로 피고 지름 3cm 내외이며 주름이 진다.
+                
+                화관은 5개로 갈라지고 수꽃에는 3개의 수술이 있으며 암꽃에는 가시 같은 돌기가 있는 긴 씨방이 아래 쪽에 있다. 
+                열매는 장과(漿果)로 원주형이며 어릴 때는 가시 같은 돌기가 있고 녹색에서 짙은 황갈색으로 익으며 종자는 황백색이다. 
+                오이는 중요한 식용 작물의 하나이며 즙액은 뜨거운 물에 데었을 때 바르는 등 열을 식혀주는 기능도 한다. 
+                많은 품종이 개발되어 있다.
+
             </div>
         );
     }
