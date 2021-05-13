@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import {Nav, NavbarBrand} from 'react-bootstrap';
 import { render } from '@testing-library/react';
 import {MainWrapper, LeftWrapper, RightWrapper, SideBar} from './Trade/TradeWrapper';
-// #56c000
 
 console.log(ApexCharts);
 
@@ -16,9 +15,7 @@ class TradeMain extends Component {
     static element = (
         <MainWrapper>
             <LeftWrapper coinType="감자" coinAlias="Potato"/>
-            <RightWrapper>
-                <SideBar/>
-            </RightWrapper>
+            <RightWrapper/>
         </MainWrapper>
     );
     render() {
