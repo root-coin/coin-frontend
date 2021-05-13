@@ -1,25 +1,70 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Router, Route } from 'react-router-dom';
+
+//components
+import Nav from './components/Nav';
+import NavUnder from './components/NavUnder';
+import Main from './components/Main';
+import Trade from './components/Trade';
+import Game from './components/Game';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+
+class PageMain extends Component {
+  render(){
+    return(
+      <div>
+      </div>
+    )
+  }
+}
+
+class PageGame extends Component {
+  render(){
+    return(
+      <div>
+      </div>
+    )
+  }
+}
+
+class PageTrade extends Component {
+  render(){
+    return (
+      <div>
+      </div>
+    )
+  }
+}
+
+class PageLogin extends Component {
+  render(){
+    return (
+      <div>
+      </div>
+    )
+  }
+}
+
+class PageSignUp extends Component {
+  render(){
+    return(
+      <div>
+      </div>
+    )
+  }
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Route path="/" component={PageMain} exact></Route>
+        <Route path="/login" component={PageLogin} exact></Route>
+        <Route path="/signUp" component={PageSignUp} exact></Route>
+        <Route path="/trade" component={PageTrade} exact></Route>
+        <Route path="/game" component={PageGame} exact></Route>
       </div>
     );
   }
