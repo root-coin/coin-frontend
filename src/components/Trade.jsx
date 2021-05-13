@@ -40,12 +40,12 @@ class TradeMain extends Component {
 
         //temp data
         this.setState({
-            main_coin_name : "고구마",
-            main_coin_price : 909,
+            main_coin_name : "오이",
+            main_coin_price : 1296,
             coins : [{
                 "coinId": 1,
-                "coinName": "고구마",
-                "price": 830
+                "coinName": "오이",
+                "price":1296
             }, {
                 "coinId": 3,
                 "coinName": "감자",
