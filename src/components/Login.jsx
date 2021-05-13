@@ -10,6 +10,24 @@ class Login extends Component {
         super(props);
         this.state = {  }
     }
+    handleLogin = ()=>{
+        let id = document.getElementById('formBasicEmail').value;
+        let pw = document.getElementById('formBasicPassword').value;
+        fetch('api/account/login', {
+            method: "POST",
+            headers: {
+                'Content-type' : 'application/json'
+            },
+            body: JSON.stringify({
+                userId : id,
+                userPassword: pw,
+            })
+        })
+        .then(response=>response.json())
+        .then((response)=>{
+            console.log(response);
+        })
+    }
     render() {
         return (
             <div className="swm_login">

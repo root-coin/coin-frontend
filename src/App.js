@@ -11,6 +11,7 @@ import Main from './components/Main';
 import Trade from './components/Trade';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Grow from './components/Grow';
 
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,6 +32,9 @@ class PageGrow extends Component {
   render(){
     return(
       <div>
+        <Nav />
+        <Grow />
+        <NavUnder />
       </div>
     )
   }

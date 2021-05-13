@@ -1,0 +1,164 @@
+.grow_back{
+    padding-top : 100px;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+}
+.grow_box{
+    max-width: 1280px;
+    height: 600px;
+    margin : 0 auto;
+}
+.grow_left{
+    width: 40%;
+    margin-left: 30px;
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+    border-radius: 50px;
+    position : relative;
+}
+.grow_left img {
+    width: 100%;
+    height: 100%;
+}
+.gui_item{
+    width: 100px;
+    height: 100px;
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    margin : auto;
+}
+.gui_item > img {
+    width: auto;
+}
+.startButton{
+    width: 100px;
+    height: 100px;
+}
+
+.grow_right{
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-right: 30px;
+    background-color: rgb(0,0,0);
+    overflow: auto;
+}
+.message_wrapper{
+    width: 100%;
+    height: 30px;
+}
+.message_wrapper > div {
+    float : left;
+}
+.message_arrow {
+    width: 80px;
+    text-align: center;
+    padding : 10px 0px 10px 0px;
+    font-weight:bolder;
+    color : rgb(58, 201, 58);
+}
+.message_msg{
+    width: calc(100% - 80px);
+    text-align: left;
+    padding : 10px 0px 10px 0px;
+    font-weight:bolder;
+    color : rgb(58, 201, 58);
+}
+.message_typing{
+    outline: 0px solid transparent;
+}
+
+:root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(106, 163, 137);
+    --colorShadeB: rgb(121, 186, 156);
+    --colorShadeC: rgb(150, 232, 195);
+    --colorShadeD: rgb(187, 232, 211);
+    --colorShadeE: rgb(205, 255, 232);
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+.big-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 20px;
+    color:var(--colorShadeA);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-left:-15px;
+}
+button.big-button {
+    padding: 1em 2em;
+    border: 2px solid var(--colorShadeA);
+    border-radius: 1em;
+    background: var(--colorShadeE);
+    transform-style: preserve-3d;
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--colorShadeC);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+button.big-button:hover {
+    background: var(--colorShadeD);
+    transform: translate(0, 0.375em);
+}
+button.big-button:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+}
+button.big-button:active {
+    transform: translate(0em, 0.75em);
+}
+button.big-button:active::before {
+    transform: translate3d(0, 0, -1em);
+    box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+.preview{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.backButton{
+    width: 100px;
+    height: 60px;
+    position : absolute;
+    bottom : 0;
+    right : 20px;
+    margin : auto;
+}
+
+/* Scroll 2 */
+.sc2::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .sc2::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .sc2::-webkit-scrollbar-thumb {
+    background-color: #08aa2b;
+    border-radius: 10px;
+  }
+  
