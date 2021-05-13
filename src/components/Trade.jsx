@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import ApexCharts from "react-apexcharts";
 import '../css/trade.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +13,10 @@ console.log(ApexCharts);
 class TradeUtility{
     static currentOverviewTab = 1;
     static currentCoinType = 1;
+    static reRender(tab)
+    {
+        this.currentOverviewTab = tab;
+    }
 }
 
 class MainWrapper extends Component {
@@ -63,22 +68,18 @@ class CoinOverviewHeader extends Component {
                 <div className="trade_coin_overview_header_tab">
                     <Nav
                     activeKey="/home"
-                    onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+                    onSelect={(selectedKey) => {
+                        switch(selectedKey)
+                        {
+                            case "test":
+                                TradeUtility.reRender(2);
+                                break;
+                        }
+                    }}
                     >
-                    <Nav.Item>
-                        <Nav.Link href="/home">Active</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-1">Link</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="link-2">Link</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="disabled" disabled>
-                        Disabled
-                        </Nav.Link>
-                    </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="test">Active</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </div>
             </div>
