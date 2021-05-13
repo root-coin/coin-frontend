@@ -1,0 +1,115 @@
+.swm_nav {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border-bottom: 2px solid #56c000;
+    position: fixed;
+    z-index: 10;
+}
+.swm_nav .nav_wrapper{
+    height: 100%;
+    margin-right: 10px;
+}
+.swm_nav .nav_logo{
+    float : left;
+    width: 180px;
+    height: 100%;
+}
+.swm_nav .nav_logo img{
+    margin-top : 2px;
+    width: 80%;
+    height: 60%;
+    padding : 10px;
+    cursor: pointer;
+}
+.swm_nav .nav_list_left{
+    float : left;
+    height: 100%;
+}
+.swm_nav .nav_list_right{
+    float : right;
+    height: 100%;
+}
+.swm_nav .nav_item {
+    height: 100%;
+    float : left;
+    display : table;
+    font-size : 14px;
+    font-weight: 500;
+    margin-left : 10px;
+    margin-right: 10px;
+}
+.swm_nav .nav_item > div {
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+}
+.swm_nav .nav_item > div > a {
+    text-decoration: none;
+    color : rgb(0, 0, 0);
+}
+.swm_nav .nav_item > div > a:hover {
+    color : rgb(46, 46, 46);
+}
+
+.swm_nav_under .nav_under{
+    width: 100%;
+    height: 200px;
+    border-top: 2px solid #56c000;
+}
+.swm_nav_under .navUnder_wrapper{
+    margin : 0 auto;
+    height: 100%;
+}
+.swm_nav_under .navUnder_left, .navUnder_right{
+    float : left;
+}
+.swm_nav_under .navUnder_left {
+    float: left;
+    margin-left: 200px;
+    height: 100%;
+}
+.swm_nav_under .navUnder_right{
+    float: right;
+    margin-right: 200px;
+    height: 100%;
+
+}
+.swm_nav_under .navUnder_logoBox{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    float : left;
+}
+.swm_nav_under .navUnder_logoBox > img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    margin : auto;
+}
+.swm_nav_under .navUnder_copyright{
+    width: 400px;
+    float : left;
+    text-align: left;
+    font-size: 14px;
+    padding-top : 80px;
+    padding-left : 20px;
+}
+.swm_nav_under .navUnder_members {
+    width: 300px;
+    margin-right: 10px;
+    height: 100%;
+    float:left;
+    text-align: right;
+    color : rgb(44, 44, 44);
+    font-size : 14px;
+    padding-top : 70px;
+}
+
+.swm_nav_under .navUnder_members > li{
+    list-style: none;
+}
