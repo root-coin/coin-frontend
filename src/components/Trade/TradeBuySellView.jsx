@@ -148,6 +148,9 @@ class BuySellItems extends Component {
             console.log(response);
         })
     }
+    numberWithCommas = (x)=>{
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     render(){
         let total = this.state.num * this.state.price;
         return (
@@ -172,7 +175,7 @@ class BuySellItems extends Component {
                     <div className="buy_sell_item_left">주문가능</div>
                     <div className="buy_sell_item_right">
                         <div className="buy_sell_item_myPoint">
-                            <span>{this.state.myMoney}</span>
+                            <span>{this.numberWithCommas(this.state.myMoney)}</span>
                             <span> KRW</span>
                         </div>
                     </div>
