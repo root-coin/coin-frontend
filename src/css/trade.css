@@ -1,0 +1,144 @@
+
+.trade_main_wrapper{
+    display: flex;
+    padding: 80px 10px 20px 10px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 228, 212);
+}
+
+.trade_main_wrapper > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    align-items: flex-start;
+    justify-content: center;
+    overflow:hidden;
+    overflow-y:hidden;
+}
+
+.trade_left_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    min-width: 600px;
+    margin: 0px;
+}
+
+.trade_coin_overview{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: white;
+    margin: 0px 10px 20px 10px;
+}
+
+.trade_coin_overview_header{
+    display: flex;
+    height: 60px;
+    border-bottom: 2px solid rgb(214, 228, 212);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trade_coin_overview_header_title > span{
+    margin-left: 15px;
+    font-size: small;
+}
+
+.trade_coin_overview_header_title > span:first-child{
+    font-weight: bold;
+    font-size: large;
+}
+
+.trade_coin_overview_header_tab{
+    margin-right: 15px;
+}
+
+.trade_coin_overview_content{
+    height: 120px;
+    margin: 20px;
+
+}
+
+.trade_coin_overview_content > div:first-child{
+    font-size:  32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.trade_coin_overview_content > div:last-child{
+    font-size:  16px;
+
+}
+
+.trade_coin_chart{
+    background-color: white;
+    margin: 0px 10px 20px 10px;
+}
+
+.trade_coin_chart_content{
+    margin: 30px 30px 30px 10px;
+}
+
+.trade_left_bottom_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    overflow:hidden;
+    overflow-y:hidden;
+}
+
+.trade_transaction_detail{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    height: 100%;
+    min-width: 300px;
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+}
+
+.trade_transaction_detail_header{
+    display: flex;
+    height: 60px;
+    border-bottom: 2px solid rgb(214, 228, 212);
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trade_transaction_detail_header > span{
+    margin-left: 15px;
+    font-size: small;
+}
+
+.trade_transaction_detail_header > span:first-child{
+    font-weight: bold;
+    font-size: large;
+}
+
+.trade_transaction_detail_content{
+
+}
+
+.trade_buy_sell_view{
+    flex-grow: 3;
+    height: 100%;
+    min-width: 300px;
+    margin: 0px 10px 0px 10px;
+    background-color: white;  
+}
+
+.trade_right_wrapper{
+    flex-grow: 1;
+    height: 1000px;
+    min-width: 300px;
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+    
+}
