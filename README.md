@@ -22,6 +22,7 @@ api를 통해 공공데이터로부터 **실제 실시간 야채 시세**를 가
 ### #식물 재배 페이지
 ![image](https://user-images.githubusercontent.com/19369750/118197371-c3987580-b489-11eb-9a61-08829977ad4d.png)
 ![image](https://user-images.githubusercontent.com/19369750/118197972-f8f19300-b48a-11eb-8ddc-4cc0ccd4bbe7.png)
+![image](https://user-images.githubusercontent.com/19369750/118198980-00b23700-b48d-11eb-9726-909c51300d72.png)
 
 
 ### #로그인
