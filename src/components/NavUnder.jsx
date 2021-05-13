@@ -12,7 +12,7 @@ class NavUnder extends Component {
                     <div className="navUnder_wrapper">
                         <div className="navUnder_left">
                             <div className="navUnder_logoBox">
-                                <img src="./imgs/LOGO_green.png"/>
+                                <img src="./imgs/logo_green.png"/>
                             </div>
                             <div className="navUnder_copyright">
                                 Copyright 2021. RootCoin from Software Maestro 12th members. all rights reserved.
