@@ -4,11 +4,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavbarBrand } from 'react-bootstrap';
 
 class BuySellView extends Component {
+    constructor(props){
+        super(props);
+        this.toggleBuyOrSell=this.toggleBuyOrSell.bind(this);        
+        this.state={
+            buyOrSell : 1
+        }
+    }
+    toggleBuyOrSell(choice){
+        console.log(choice);    
+        this.setState(()=>{
+            return {buyOrSell: choice};
+        });
+    }
     render() {
+        console.log(this.state.buyOrSell);
+        if(this.state.buyOrSell == 1)
         return (
             <div className="trade_buy_sell_view">
-                <BuySellViewHeader />
+                <BuySellViewHeader 
+                toggleBuyOrSell={this.toggleBuyOrSell}/>
                 <BuyViewContent />
+            </div>
+        );
+        else
+        return(
+            <div className="trade_buy_sell_view">
+                <BuySellViewHeader 
+                toggleBuyOrSell={this.toggleBuyOrSell}/>
+                <SellViewContent />
             </div>
         );
     }
@@ -27,10 +51,10 @@ class BuySellViewHeader extends Component {
                         onSelect={(selectedKey) => {
                             switch (selectedKey) {
                                 case "buy":
-                                    console.log(this.props);
+                                    this.props.toggleBuyOrSell(1);
                                     break;
                                 case "sell":
-                                    console.log(this.props);
+                                    this.props.toggleBuyOrSell(2);
                                     break;
                             }
                         }}
@@ -52,6 +76,7 @@ class BuyViewContent extends Component {
     render() {
         return (
             <div className="trade_buy_view_content">
+                asdf
             </div>
         );
     }
@@ -61,6 +86,7 @@ class SellViewContent extends Component {
     render() {
         return (
             <div className="trade_sell_view_content">
+                fdsa
             </div>
         );
     }

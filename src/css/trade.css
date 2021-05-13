@@ -225,7 +225,6 @@
 }
 
 .trade_sidebar_header_tab .nav-item{
-    flex-grow: 1;
     text-align: center;
     width: 100px;
 }
