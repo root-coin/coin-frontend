@@ -29,14 +29,13 @@
 .trade_coin_overview{
     display: flex;
     flex-direction: column;
-    height: 180px;
     background-color: white;
     margin: 0px 10px 20px 10px;
 }
 
 .trade_coin_overview_header{
     display: flex;
-    height: 60px;
+    min-height: 50px;
     border-bottom: 2px solid rgb(214, 228, 212);
     align-items: center;
     justify-content: space-between;
@@ -57,8 +56,7 @@
 }
 
 .trade_coin_overview_content{
-    height: 120px;
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
 
 }
 
@@ -71,6 +69,41 @@
 
 .trade_coin_overview_content > div:last-child{
     font-size:  16px;
+
+}
+
+.trade_coin_information{
+    display: flex;
+    max-width: 940px;
+    flex-direction: column;
+    background-color: white;
+    margin: 0px 10px 20px 10px;
+}
+
+.trade_coin_information_header{
+    display: flex;
+    min-height: 50px;
+    border-bottom: 2px solid rgb(214, 228, 212);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trade_coin_information_header_title > span{
+    margin-left: 15px;
+    font-size: small;
+}
+
+.trade_coin_information_header_title > span:first-child{
+    font-weight: bold;
+    font-size: large;
+}
+
+.trade_coin_information_header_tab{
+    margin-right: 15px;
+}
+
+.trade_coin_information_content{
+    margin: 20px;
 
 }
 
