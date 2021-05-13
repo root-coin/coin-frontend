@@ -24,13 +24,16 @@ class TransactionDetailHeader extends Component{
     }
 }
 class InvestContent extends Component{
+    numberWithCommas = (x)=>{
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     render(){
         return (
             <div className="investContents_item">
                 <div className="investContents_time">{this.props.time}</div>
-                <div className="investContents_total">{Number(this.props.num) * Number(this.props.price)} \</div>
-                <div className="investContents_num">{this.props.num} EA</div>
-                <div className="investContents_price">{this.props.price} \</div>
+                <div className="investContents_total">{this.numberWithCommas(Number(this.props.num) * Number(this.props.price))} \</div>
+                <div className="investContents_num">{this.numberWithCommas(this.props.num)} EA</div>
+                <div className="investContents_price">{this.numberWithCommas(this.props.price)} \</div>
             </div>
         )
     }
