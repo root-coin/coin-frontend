@@ -13,23 +13,33 @@ class SignUp extends Component {
     sendSignUp(){
         let id = document.getElementById("formBasicEmail").value;
         let pw = document.getElementById("formBasicPassword").value;
+        let pwChk = document.getElementById("formBasicPasswordConfirm").value;
         let name = document.getElementById("formBasicNickName").value;
-        fetch('api/account/new', {
-            method: "POST",
-            headers: {
-                'Content-type' : 'application/json'
-            },
-            body: JSON.stringify({
-                userId : id,
-                userPassword: pw,
-                userNickname: name
+        if(pw===pwChk){
+            fetch('api/account/new', {
+                method: "POST",
+                headers: {
+                    'Content-type' : 'application/json'
+                },
+                body: JSON.stringify({
+                    userId : id,
+                    userPassword: pw,
+                    userNickname: name
+                })
             })
-        })
-        .then(response => response.json())
-        .then(response => {
-            alert(response);
-            console.log(response);
-        })
+            .then(response => response.json())
+            .then(response => {
+                console.log(response)
+                if(response.result === "good"){
+                    alert("회원가입이 완료되었습니다");
+                    window.location.href = "/";
+                } else {
+                    alert("이미 존재하는 계정입니다");
+                }
+            })
+        } else {
+            alert("비밀번호가 일치하지 않습니다");
+        }
     }
     render(){
         return (
@@ -59,8 +69,12 @@ class SignUp extends Component {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                             <br/>
+                        </Form.Group>
+
+                        <Form.Group controlId="formBasicPasswordConfirm">
                             <Form.Control type="password" placeholder="Confirm Password" />
                         </Form.Group>
+
                     </Form>
                     </article>
                     <br/>

@@ -113,3 +113,7 @@
 .swm_nav_under .navUnder_members > li{
     list-style: none;
 }
+
+.logout{
+    cursor: pointer;
+}

@@ -25,7 +25,9 @@ class Login extends Component {
         })
         .then(response=>response.json())
         .then((response)=>{
-            console.log(response);
+            if(response.result==="success"){
+                window.location.href = "/"
+            }
         })
     }
     render() {

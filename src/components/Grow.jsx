@@ -154,6 +154,9 @@ class Grow extends Component {
             '저장' : 6
         }
     }
+    componentDidMount(){
+        this.handleLoad();
+    }
     translateInput = (input)=>{
         let result = null;
         if(input === 0) {
@@ -270,38 +273,56 @@ class Grow extends Component {
         })
     }
     handleLoad = ()=>{
-        // fetch('api/account/new', {
-        //     method: "POST",
-        //     headers: {
-        //         'Content-type' : 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //     })
-        // })
-        // .then(response => response.json())
-        // .then(response => {
-        //     alert(response);
-        //     console.log(response);
-        // })
+        fetch('api/grow/load', {
+            method: "GET",
+            headers: {
+                'Content-type' : 'application/json'
+            },
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log("response data");
+            console.log(response);
+            if(response.error){
+                window.location.href = "/login"
+            } else {
+                if(response.Item!==null){
+                    this.setState({
+                        level : response.Item.level,
+                        humidity : response.Item.humidity,
+                        hungry : response.Item.hungry,
+                        messages : [{
+                            msg : this.translateInput(4),
+                            readonly : true
+                        },{
+                            msg : "",
+                            readonly : false
+                        }]
+                    })
+                }
+            }
+        })
     }
 
     handleSave = ()=>{
         let humidity = this.state.humidity;
         let hungry = this.state.hungry;
         let level = this.state.level;
-        // fetch('api/account/new', {
-        //     method: "POST",
-        //     headers: {
-        //         'Content-type' : 'application/json'
-        //     },
-        //     body: JSON.stringify({
-        //     })
-        // })
-        // .then(response => response.json())
-        // .then(response => {
-        //     alert(response);
-        //     console.log(response);
-        // })
+        fetch('api/grow/save', {
+            method: "POST",
+            headers: {
+                'Content-type' : 'application/json'
+            },
+            body: JSON.stringify({
+                    level : this.state.level,
+                    humidity : this.state.humidity,
+                    hungry : this.state.hungry,
+            })
+        })
+        .then(response => response.json())
+        .then(response => {
+            console.log(response);
+        })
         alert("저장완료");
     }
 
