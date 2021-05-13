@@ -34,20 +34,20 @@ class Login extends Component {
         return (
             <div className="swm_login">
                 <div className="swm_login_wrapper">
-                    <header>
-                        <img src="./imgs/logo_green.png"/>
+                    <header className="swm_login_header">
+                        로그인
                     </header>
                     <article>
                         <Form>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label>아이디</Form.Label>
-                                <Form.Control type="email" placeholder="id" />
+                                <Form.Label>이메일</Form.Label>
+                                <Form.Control type="email" placeholder="example@rootcoin.com" />
                                 <br/>
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
                                 <Form.Label>비밀번호</Form.Label>
-                                <Form.Control type="password" placeholder="Password" />
+                                <Form.Control type="password" placeholder="●●●●●●●●" />
                             </Form.Group>
                         </Form>
                         <br/>
@@ -57,7 +57,6 @@ class Login extends Component {
                         <div className="signUp_button">
                             <Link to={"signUp"}>회원가입</Link>
                         </div>
-                        <div className="rootCoin_signature">RootCoin</div>
                     </article>
                 </div>
             </div>

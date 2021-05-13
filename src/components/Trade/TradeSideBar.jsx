@@ -174,17 +174,16 @@ class SideBarRankingContent extends Component{
     render(){
         return(
             <div className="trade_sidebar_ranking_content">
-                <SlideBarRankingItem rank="1" nickname="asdf" amount="184850434"/>
-                <SlideBarRankingItem rank="2" nickname="fdsa" amount="134840437"/>
-                <SlideBarRankingItem rank="3" nickname="gags" amount="89852439"/>
-                <SlideBarRankingItem rank="4" nickname="gnegawdf" amount="74335438"/>
-                <SlideBarRankingItem rank="5" nickname="Swgwgasdf" amount="64852354"/>
-                <SlideBarRankingItem rank="6" nickname="asdfgwr" amount="55125445"/>
-                <SlideBarRankingItem rank="7" nickname="gagagw" amount="36453412"/>
-                <SlideBarRankingItem rank="8" nickname="Sudfasdfwq" amount="21545335"/>
-                <SlideBarRankingItem rank="9" nickname="Supergsf" amount="16545456"/>
-                <SlideBarRankingItem rank="10" nickname="Superuser" amount="9485645"/>
-                <SlideBarRankingItem rank="345" nickname="nayechan" amount="7453495"/>
+                <SlideBarRankingItem rank="1" nickname="RootCoin" amount="59,123,734"/>
+                <SlideBarRankingItem rank="2" nickname="나예찬" amount="47,634,143"/>
+                <SlideBarRankingItem rank="3" nickname="강재현" amount="43,312,654"/>
+                <SlideBarRankingItem rank="4" nickname="이재환" amount="38,912,342"/>
+                <SlideBarRankingItem rank="5" nickname="송기연" amount="34,657,134"/>
+                <SlideBarRankingItem rank="6" nickname="홍길동" amount="31,336,126"/>
+                <SlideBarRankingItem rank="7" nickname="김태형" amount="29,965,123"/>
+                <SlideBarRankingItem rank="8" nickname="유재석" amount="27,664,145"/>
+                <SlideBarRankingItem rank="9" nickname="임동진" amount="26,341,948"/>
+                <SlideBarRankingItem rank="10" nickname="Anonymous" amount="25,996,124"/>
             </div>
         );
     }

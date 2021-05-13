@@ -122,7 +122,7 @@ class CoinChart extends Component {
     render() {
         return (
             <div className="trade_coin_chart">
-                <ApexCharts options={this.state.options} series={this.state.series} type="candlestick" height={350}
+                <ApexCharts options={this.state.options} series={this.state.series} type="candlestick" height={300}
                             className="trade_coin_chart_content"/>
                 <ApexCharts options={this.state.optionsBar} series={this.state.seriesBar} type="bar" height={160}/>
             </div>
