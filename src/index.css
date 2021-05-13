@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.color-green1 {
+    color: #0fd850;
+}
+.btn-color-green1 {
+  background-color: #0fd850 !important;
+  border-color: #0fd850 !important;
+}
+.color-green2 {
+  color: #008b00;
+}
+.color-grey1 {
+  color: #E5E5E5;
 }
