@@ -1,0 +1,82 @@
+.buy_sell_wrapper{
+    padding : 10px;
+}
+.buy_sell_item{
+    width: 100%;
+    height: 45px;
+    /* background-color: aqua; */
+    padding : 10px;
+}
+.buy_sell_item_left{
+    width: 100px;
+    float : left;
+    font-size : 14px;
+    color : rgb(97, 97, 97);
+    padding : 5px;
+}
+.buy_sell_item_right{
+    width: calc(100% - 100px);
+    float : left;
+}
+.buy_sell_item_selector > label {
+    width: 30%;
+    float : left;
+    color :rgb(192, 192, 192);
+}
+.buy_sell_item_selector_active{
+    color : black !important;
+}
+.buy_sell_item_myPoint {
+    text-align: right;
+}
+.buy_sell_item_price {
+    width : 100%
+}
+.buy_sell_item_price > input {
+    float : left;
+    width : 80%;
+}
+.buy_sell_item_price > div{
+    float : left;
+    width : 10%;
+    text-align: center;
+    border : 1px solid rgb(180, 180, 180);
+    height : 30px;
+    background-color: rgb(240, 240, 240);
+    font-size : 16px;
+    cursor: pointer;
+}
+.buy_sell_item_price > div:hover{
+    background-color: rgb(230, 230, 230);
+}
+.buy_sell_item_price > div:active{
+    background-color: rgb(189, 189, 189);
+}
+.buy_sell_item_number, .buy_sell_item_total {
+    width: 100%;
+}
+.buy_sell_item_number > input, .buy_sell_item_total > input {
+    width: 100%;
+}
+.buy_sell_button {
+    width: 100%;
+}
+.buy_sell_button > button {
+    width :100%;
+    margin-top : 10px;
+}
+.buy_sell_wrapper input[type=number]{
+    text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.buy_sell_wrapper input::-webkit-outer-spin-button,
+.buy_sell_wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.buy_sell_wrapper input[type=number] {
+  -moz-appearance: textfield;
+}
