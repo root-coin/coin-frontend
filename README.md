@@ -40,3 +40,7 @@ api를 통해 공공데이터로부터 **실제 실시간 야채 시세**를 가
 
 ### #기술스택(Front-end)
 - react.js, react-boostrap
+
+
+### Back-End git repo
+https://github.com/root-coin/coin-backend
