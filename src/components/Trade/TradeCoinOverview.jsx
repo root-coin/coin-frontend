@@ -68,7 +68,7 @@ class CoinOverviewContent extends Component {
                     <span> KRW</span>
                 </div>
                 <div>
-                    전일대비 +1.2% ▲ 10
+                    전일대비 +1.2% <span class="trade_coin_overview_incdec_color">▲15</span>
                 </div>
             </div>
         );

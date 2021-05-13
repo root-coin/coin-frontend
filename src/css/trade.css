@@ -78,6 +78,10 @@
 
 }
 
+.trade_coin_overview_incdec_color{
+    color: red;
+}
+
 .trade_coin_information{
     display: flex;
     max-width: 100%;
