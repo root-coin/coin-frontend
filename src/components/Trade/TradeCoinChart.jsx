@@ -101,7 +101,7 @@ class CoinChart extends Component {
     }
 
     componentDidMount() {
-        const coinId = "0901"; // test
+        const coinId ="0901"; // test
 
         fetch(`api/trade/chart/${coinId}`, {
             method: "GET",
