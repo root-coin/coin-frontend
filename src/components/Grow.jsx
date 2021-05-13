@@ -269,9 +269,39 @@ class Grow extends Component {
             ]
         })
     }
-
+    handleLoad = ()=>{
+        // fetch('api/account/new', {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-type' : 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //     })
+        // })
+        // .then(response => response.json())
+        // .then(response => {
+        //     alert(response);
+        //     console.log(response);
+        // })
+    }
 
     handleSave = ()=>{
+        let humidity = this.state.humidity;
+        let hungry = this.state.hungry;
+        let level = this.state.level;
+        // fetch('api/account/new', {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-type' : 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //     })
+        // })
+        // .then(response => response.json())
+        // .then(response => {
+        //     alert(response);
+        //     console.log(response);
+        // })
         alert("저장완료");
     }
 

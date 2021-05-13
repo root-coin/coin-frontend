@@ -50,7 +50,7 @@ class Login extends Component {
                         </Form>
                         <br/>
                         <div>
-                            <Button>Login</Button>
+                            <Button onClick={this.handleLogin}>Login</Button>
                         </div>
                         <div className="signUp_button">
                             <Link to={"signUp"}>회원가입</Link>
