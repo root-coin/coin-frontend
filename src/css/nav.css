@@ -16,9 +16,9 @@
     height: 100%;
 }
 .swm_nav .nav_logo img{
-    margin-top : 2px;
+    margin-top : 4px;
     width: 80%;
-    height: 60%;
+    height: 80%;
     padding : 10px;
     cursor: pointer;
 }

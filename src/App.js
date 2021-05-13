@@ -9,7 +9,6 @@ import Nav from './components/Nav';
 import NavUnder from './components/NavUnder';
 import Main from './components/Main';
 import Trade from './components/Trade';
-import Game from './components/Game';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +38,9 @@ class PageTrade extends Component {
   render(){
     return (
       <div>
+        <Nav></Nav>
+        <Trade></Trade>
+        <NavUnder></NavUnder>
       </div>
     )
   }
