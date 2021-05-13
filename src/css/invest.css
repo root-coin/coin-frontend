@@ -47,7 +47,6 @@
     font-size: 24px;
     font-weight: bold;
     min-height: 50px;
-    border-bottom: 2px solid rgb(214, 228, 212);
 }
 
 .invest_right_wrapper{
@@ -63,4 +62,12 @@
     margin-bottom: 10px;
     text-align: left;
     background-color: white;
+}
+
+button{
+    padding: 10px;
+    line-height: 90%;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
 }

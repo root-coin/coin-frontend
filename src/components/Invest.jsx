@@ -32,7 +32,7 @@ class MainWrapper extends Component{
                         <p><b>363%</b> 달성</p>
                         <p><b>14,345,164</b>원 펀딩</p>
                         <p><b>3,553</b>명 지원</p>
-                        <button>후원하기</button>
+                        <button className="btn-color-green1"  size="sm" >후원하기</button>
                     </div>
                     <div>
                         <b>프로젝트 요약</b>
