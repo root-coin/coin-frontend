@@ -32,8 +32,8 @@ class Nav extends Component {
                     </div>
                     <div className="nav_list_left">
                         <NavItem name="거래소" url="trade"/>
-                        <NavItem name="채굴" url="trade"/>
-                        <NavItem name="투자" url="trade"/>
+                        <NavItem name="채굴" url="grow"/>
+                        <NavItem name="투자" url="invest"/>
                     </div>
                     <div className="nav_list_right">
                         <NavItem name="로그인" url="login"/>

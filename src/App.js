@@ -11,6 +11,8 @@ import Main from './components/Main';
 import Trade from './components/Trade';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+
+//bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class PageMain extends Component {
@@ -25,7 +27,7 @@ class PageMain extends Component {
   }
 }
 
-class PageGame extends Component {
+class PageGrow extends Component {
   render(){
     return(
       <div>
@@ -60,6 +62,7 @@ class PageSignUp extends Component {
   render(){
     return(
       <div>
+        <SignUp/>
       </div>
     )
   }
@@ -73,7 +76,7 @@ class App extends Component {
         <Route path="/login" component={PageLogin} exact></Route>
         <Route path="/signUp" component={PageSignUp} exact></Route>
         <Route path="/trade" component={PageTrade} exact></Route>
-        <Route path="/game" component={PageGame} exact></Route>
+        <Route path="/grow" component={PageGrow} exact></Route>
       </div>
     );
   }

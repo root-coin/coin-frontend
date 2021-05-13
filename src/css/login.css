@@ -1,0 +1,62 @@
+.swm_login{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(240,240,240);
+    padding-top : 80px;
+}
+.swm_login_wrapper{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    margin : 0 auto;
+    padding-top : 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.swm_login_wrapper header{
+    height: 80px;
+    background-color: rgb(140, 232, 255);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding : 20px;
+}
+.swm_login_wrapper header img{
+    width: 150px;
+}
+.swm_login_wrapper div {
+    text-align: left;
+}
+.swm_login_wrapper button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+.swm_login_wrapper .rootCoin_signature{
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    font-size : 30px;
+    text-align: center !important;
+    padding: 60px;
+}
+
+.swm_login_wrapper .signUp_button{
+    width: 100%;
+    height: 100px;
+    text-align: center !important;
+    font-size : 13px;
+    padding : 30px;
+    cursor: pointer;
+}
+.swm_login_wrapper .signUp_button > a {
+    text-decoration: none;
+    color : gray;
+}
+.swm_login_wrapper .signUp_button > a:hover{
+    color : rgb(65, 65, 65);
+}
+.swm_login_wrapper .checkButton > button{
+    width: 80px;
+    height: 30px;
+    font-size : 12px;
+}

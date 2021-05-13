@@ -15,18 +15,18 @@ class Login extends Component {
             <div className="swm_login">
                 <div className="swm_login_wrapper">
                     <header>
-                        <img src="./imgs/LOGO_WHITE.png"/>
+                        <img src="./imgs/logo_green.png"/>
                     </header>
                     <article>
                         <Form>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Label>아이디</Form.Label>
+                                <Form.Control type="email" placeholder="id" />
                                 <br/>
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
+                                <Form.Label>비밀번호</Form.Label>
                                 <Form.Control type="password" placeholder="Password" />
                             </Form.Group>
                         </Form>

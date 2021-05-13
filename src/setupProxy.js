@@ -4,7 +4,7 @@ module.exports = function(app){
     //target : backend url
     app.use(
         createProxyMiddleware('/api', {
-            target: 'http://www.backend.url',
+            target: 'https://coin-backend-pbpsl.run.goorm.io',
             changeOrigin: true
         })
     )
