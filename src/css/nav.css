@@ -4,7 +4,7 @@
     background-color: white;
     border-bottom: 2px solid #56c000;
     position: fixed;
-    z-index: 10;
+    z-index: 100;
 }
 .swm_nav .nav_wrapper{
     height: 100%;
