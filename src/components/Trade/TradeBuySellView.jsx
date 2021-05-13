@@ -119,6 +119,35 @@ class BuySellItems extends Component {
             price : Number(_price)+diff
         })
     }
+    coinTrade = ()=>{
+        let _num = Number(document.querySelector(".buy_sell_item_number > input").value);
+        // fetch('api/trade/coins', {
+        //     method: "GET",
+        //     headers: {
+        //         'Content-type' : 'application/json'
+        //     },
+        // })
+        // .then(response=>response.json())
+        // .then((response)=>{
+        //     console.log('todays coin extract');
+        //     this.setState({
+        //         coins : response
+        //     })
+        // })
+        fetch("api/trade/transaction/buy/0901",{
+            method: "POST",
+            headers: {
+                'Content-type' : 'application/json'
+            },
+            body: JSON.stringify({
+                "quantity" : _num
+            })
+        })
+        .then((response)=>response.json())
+        .then(function(response){
+            console.log(response);
+        })
+    }
     render(){
         let total = this.state.num * this.state.price;
         return (
@@ -178,7 +207,7 @@ class BuySellItems extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="buy_sell_button">
+                <div className="buy_sell_button" onClick={this.coinTrade}>
                     <Button variant="light">{this.props.isBuy ? "매수" : "매도"}</Button>
                 </div>
             </div>
