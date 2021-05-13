@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 import {Nav, NavbarBrand} from 'react-bootstrap';
-import { render } from '@testing-library/react';
 import {MainWrapper, LeftWrapper, RightWrapper, SideBar} from './Trade/TradeWrapper';
 // #56c000
 
