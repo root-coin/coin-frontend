@@ -31,7 +31,6 @@ class CoinOverviewHeader extends Component {
                 </div>
                 <div className="trade_coin_overview_header_tab">
                     <Nav
-                    activeKey="/home"
                     onSelect={(selectedKey) => {
                         switch(selectedKey)
                         {

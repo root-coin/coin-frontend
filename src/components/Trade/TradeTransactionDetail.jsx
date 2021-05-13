@@ -17,8 +17,8 @@ class TransactionDetailHeader extends Component{
     render(){
         return(
             <div className="trade_transaction_detail_header">
-                <span>거래내역</span>
-                <span>Transaction</span>
+                <span>모의투자내역</span>
+                <span>History</span>
             </div>
         );
     }

@@ -6,7 +6,8 @@ import {CoinOverview} from './TradeCoinOverview';
 import {CoinChart} from './TradeCoinChart';
 import {CoinInformation} from './TradeCoinInformation';
 import {TransactionDetail} from './TradeTransactionDetail';
-import {BuySellView} from './BuySellView';
+import {BuySellView} from './TradeBuySellView';
+import {SideBar} from './TradeSideBar';
 
 class MainWrapper extends Component {
     render() {
@@ -76,17 +77,7 @@ class RightWrapper extends Component {
     render() {
         return (
             <div className="trade_right_wrapper">
-                {this.props.children}
-            </div>
-        );
-    }
-}
-
-class SideBar extends Component {
-    render() {
-        return (
-            <div className="trade_sidebar">
-                {this.props.children}
+                <SideBar/>
             </div>
         );
     }
@@ -96,6 +87,5 @@ export{
     MainWrapper,
     LeftWrapper,
     LeftBottomWrapper,
-    RightWrapper,
-    SideBar
+    RightWrapper
 }
