@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import '../../css/trade.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavbarBrand } from 'react-bootstrap';
@@ -70,24 +71,73 @@ class SideBarHeader extends Component{
 }
 
 class SideBarCategoryItem extends Component{
+    static lock = false;
+    constructor(){
+        super();
+        this.select = this.select.bind(this);
+        this.state={
+            font_weight: 'normal'
+        }
+    }
+    select(){
+        this.props.onSubmit(this);
+    }
     render(){
-        return (
-            <div className="trade_sidebar_category_item">
-                <span>{this.props.coinName}</span>
-                <span>{this.props.price}</span>
-            </div>
-        );
+        let item = this.props.selectedItem();
+        if(item == null)
+        {
+            //서버에서 제공하는 맨 첫번째 객체와 이 객체가 일치하면
+            //this.props.onSubmit(this);
+        }
+        if(item != this)
+        {
+            return (
+                    <div className="trade_sidebar_category_item" style={{fontWeight: 'normal'}} onClick={this.select}>
+                        <span>{this.props.coinName}</span>
+                        <span>{this.props.price} KRW</span>
+                    </div>
+            );
+        }
+        else
+        {
+            return (
+                <div className="trade_sidebar_category_item" style={{fontWeight: 'bold'}} onClick={this.select}>
+                    <span>{this.props.coinName}</span>
+                    <span>{this.props.price} KRW</span>
+                </div>
+
+            );
+        }
+        
+        
     };
 }
 
 class SideBarCategoryContent extends Component{
+    constructor(){
+        super();
+        this.onSearchSubmit = this.onSearchSubmit.bind(this);
+        this.getSelectedItem = this.getSelectedItem.bind(this);
+        this.state={
+            selected: null
+        }
+    }
+    onSearchSubmit(selectedItem){
+        this.setState({
+            selected: selectedItem
+        });
+    }
+    getSelectedItem(){
+        console.log(this.state.selected);
+        return this.state.selected;
+    }
     render(){
         return(
             <div className="trade_sidebar_category_content">
-                <SideBarCategoryItem coinName="감자" price="830"/>
-                <SideBarCategoryItem coinName="고구마" price="920"/>
-                <SideBarCategoryItem coinName="토마토" price="220"/>
-                <SideBarCategoryItem coinName="쪽파" price="1550"/>
+                <SideBarCategoryItem coinName="감자" price="830" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
+                <SideBarCategoryItem coinName="고구마" price="920" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
+                <SideBarCategoryItem coinName="토마토" price="220" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
+                <SideBarCategoryItem coinName="쪽파" price="1550" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
             </div>
         );
     }

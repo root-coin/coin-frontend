@@ -61,7 +61,13 @@
 }
 
 .trade_coin_overview_content > div:first-child{
-    font-size:  32px;
+    font-size:  24px;
+    margin-bottom: 10px;
+
+}
+
+.trade_coin_overview_content > div:first-child > span:first-child{
+    font-size:  36px;
     font-weight: bold;
     margin-bottom: 10px;
 
@@ -217,4 +223,11 @@
 .trade_sidebar_header_tab .nav-item{
     text-align: center;
     width: 100px;
+}
+
+.trade_sidebar_category_item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 20px 10px 15px;
 }

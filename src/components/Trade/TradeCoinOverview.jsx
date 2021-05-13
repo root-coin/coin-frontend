@@ -63,7 +63,8 @@ class CoinOverviewContent extends Component {
         return (
             <div className="trade_coin_overview_content">
                 <div>
-                    830p
+                    <span>830</span>
+                    <span> KRW</span>
                 </div>
                 <div>
                     전일대비 +1.2% ▲ 10
