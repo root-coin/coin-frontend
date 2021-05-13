@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import NavUnder from './components/NavUnder';
 import Main from './components/Main';
 import Trade from './components/Trade';
+import Invest from './components/Invest'
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Grow from './components/Grow';
@@ -50,6 +51,19 @@ class PageTrade extends Component {
   }
 }
 
+class PageInvest extends Component {
+  render(){
+    return (
+      <div>
+        <Nav></Nav>
+        <Invest></Invest>
+        <NavUnder></NavUnder>
+      </div>
+    )
+  }
+}
+
+
 class PageLogin extends Component {
   render(){
     return (
@@ -79,6 +93,7 @@ class App extends Component {
         <Route path="/signUp" component={PageSignUp} exact></Route>
         <Route path="/trade" component={PageTrade} exact></Route>
         <Route path="/grow" component={PageGrow} exact></Route>
+        <Route path="/invest" component={PageInvest} exact></Route>
       </div>
     );
   }
