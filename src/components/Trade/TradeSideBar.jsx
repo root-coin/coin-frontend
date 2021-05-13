@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import '../../css/trade.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavbarBrand } from 'react-bootstrap';
@@ -70,6 +71,7 @@ class SideBarHeader extends Component{
 }
 
 class SideBarCategoryItem extends Component{
+    static lock = false;
     constructor(){
         super();
         this.select = this.select.bind(this);
@@ -81,8 +83,13 @@ class SideBarCategoryItem extends Component{
         this.props.onSubmit(this);
     }
     render(){
-        console.log(this);
-        if(this.props.selectedItem() != this)
+        let item = this.props.selectedItem();
+        if(item == null)
+        {
+            //서버에서 제공하는 맨 첫번째 객체와 이 객체가 일치하면
+            //this.props.onSubmit(this);
+        }
+        if(item != this)
         {
             return (
                     <div className="trade_sidebar_category_item" style={{fontWeight: 'normal'}} onClick={this.select}>
@@ -101,6 +108,8 @@ class SideBarCategoryItem extends Component{
 
             );
         }
+        
+        
     };
 }
 
@@ -116,7 +125,7 @@ class SideBarCategoryContent extends Component{
     onSearchSubmit(selectedItem){
         this.setState({
             selected: selectedItem
-        })
+        });
     }
     getSelectedItem(){
         console.log(this.state.selected);
