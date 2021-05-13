@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+
+//router
 import { Router, Route } from 'react-router-dom';
 
 //components
@@ -10,6 +12,7 @@ import Trade from './components/Trade';
 import Game from './components/Game';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class PageMain extends Component {
   render(){
@@ -45,6 +48,7 @@ class PageLogin extends Component {
   render(){
     return (
       <div>
+        <Login />
       </div>
     )
   }
