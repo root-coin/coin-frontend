@@ -126,6 +126,7 @@ class SideBarCategoryContent extends Component{
         this.setState({
             selected: selectedItem
         });
+        //selectedItem으로 설정
     }
     getSelectedItem(){
         console.log(this.state.selected);
@@ -143,12 +144,34 @@ class SideBarCategoryContent extends Component{
     }
 }
 
+class SlideBarRankingItem extends Component{
+    render(){
+        return(
+            <div className="trade_sidebar_ranking_item">
+                <span>{this.props.rank}</span>
+                <span>{this.props.nickname}</span>
+                <span>{this.props.amount}p</span>
+            </div>
+        );
+    }
+}
+
 
 class SideBarRankingContent extends Component{
     render(){
         return(
             <div className="trade_sidebar_ranking_content">
-                fdsa
+                <SlideBarRankingItem rank="1" nickname="asdf" amount="184850434"/>
+                <SlideBarRankingItem rank="2" nickname="fdsa" amount="134840437"/>
+                <SlideBarRankingItem rank="3" nickname="gags" amount="89852439"/>
+                <SlideBarRankingItem rank="4" nickname="gnegawdf" amount="74335438"/>
+                <SlideBarRankingItem rank="5" nickname="Swgwgasdf" amount="64852354"/>
+                <SlideBarRankingItem rank="6" nickname="asdfgwr" amount="55125445"/>
+                <SlideBarRankingItem rank="7" nickname="gagagw" amount="36453412"/>
+                <SlideBarRankingItem rank="8" nickname="Sudfasdfwq" amount="21545335"/>
+                <SlideBarRankingItem rank="9" nickname="Supergsf" amount="16545456"/>
+                <SlideBarRankingItem rank="10" nickname="Superuser" amount="9485645"/>
+                <SlideBarRankingItem rank="345" nickname="nayechan" amount="7453495"/>
             </div>
         );
     }
