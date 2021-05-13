@@ -20,9 +20,7 @@ class PageMain extends Component {
   render(){
     return(
       <div>
-        <Nav />
         <Main />
-        <NavUnder />
       </div>
     )
   }
