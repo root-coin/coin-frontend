@@ -17,6 +17,7 @@ api를 통해 공공데이터로부터 **실제 실시간 야채 시세**를 가
 
 ### #코인 거래 페이지
 ![image](https://user-images.githubusercontent.com/19369750/118197058-23dae780-b489-11eb-9f63-e936a76f201c.png)
+![image](https://user-images.githubusercontent.com/19369750/118199154-66062800-b48d-11eb-8504-042f2204e789.png)
 
 
 ### #식물 재배 페이지
