@@ -12,7 +12,7 @@ class CoinOverview extends Component {
                 coinAlias={this.props.coinAlias}
                 toggleLayout={this.props.toggleLayout}
                 />
-                <CoinOverviewContent />
+                <CoinOverviewContent price={this.props.price}/>
             </div>
         );
     }
@@ -63,7 +63,8 @@ class CoinOverviewContent extends Component {
         return (
             <div className="trade_coin_overview_content">
                 <div>
-                    <span>830</span>
+                    <span>{this.props.price}</span>
+                    {/* <span>830</span> */}
                     <span> KRW</span>
                 </div>
                 <div>
