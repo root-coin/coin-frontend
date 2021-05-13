@@ -36,7 +36,6 @@ class LeftWrapper extends Component {
         });
     }
     render() {
-        console.log(this.props);
         if(this.state.currentCoinType == 1)
         return (
             <div className="trade_left_wrapper">
