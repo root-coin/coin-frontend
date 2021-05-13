@@ -44,6 +44,7 @@ class LeftWrapper extends Component {
                 coinType={this.props.coinType}
                 coinAlias={this.props.coinAlias}
                 toggleLayout={this.toggleLayout}
+                price={this.props.price}
                 />
                 <CoinChart/>
                 <LeftBottomWrapper/>
@@ -77,7 +78,7 @@ class RightWrapper extends Component {
     render() {
         return (
             <div className="trade_right_wrapper">
-                <SideBar/>
+                <SideBar coins={this.props.coins} changeFunc={this.props.changeFunc}/>
             </div>
         );
     }

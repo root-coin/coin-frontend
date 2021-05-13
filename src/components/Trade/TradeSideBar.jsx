@@ -24,7 +24,7 @@ class SideBar extends Component {
             <div className="trade_sidebar">
                 <SideBarHeader 
                 toggleCategoryOrRanking={this.toggleCategoryOrRanking}/>
-                <SideBarCategoryContent/>
+                <SideBarCategoryContent coins={this.props.coins} changeFunc={this.props.changeFunc}/>
             </div>
         );
         else
@@ -81,6 +81,7 @@ class SideBarCategoryItem extends Component{
     }
     select(){
         this.props.onSubmit(this);
+        this.props.changeFunc(this.props.coinName,this.props.price,this.props.coinId);
     }
     render(){
         let item = this.props.selectedItem();
@@ -132,12 +133,24 @@ class SideBarCategoryContent extends Component{
         return this.state.selected;
     }
     render(){
+        // coinList={this.state.coins} changeFunc={this.changeFunc}
+        let contents = [];
+        for(let i=0;i<this.props.coins.length;i++){
+            let name = this.props.coins[i].coinName;
+            let price = this.props.coins[i].price;
+            let coinId = this.props.coins[i].coinId;
+            contents.push(
+                <SideBarCategoryItem 
+                coinName={name} 
+                price={price} 
+                changeFunc={this.props.changeFunc} 
+                coinId={coinId}
+                selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
+            )
+        }
         return(
             <div className="trade_sidebar_category_content">
-                <SideBarCategoryItem coinName="감자" price="830" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
-                <SideBarCategoryItem coinName="고구마" price="920" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
-                <SideBarCategoryItem coinName="토마토" price="220" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
-                <SideBarCategoryItem coinName="쪽파" price="1550" selectedItem={this.getSelectedItem} onSubmit={this.onSearchSubmit}/>
+                {contents}
             </div>
         );
     }
